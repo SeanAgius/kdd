@@ -8,7 +8,7 @@ from sklearn.compose import ColumnTransformer
 
 # Set page configuration
 st.set_page_config(
-    page_title="Smart Pack Prediction System",
+    page_title="Smartspack KDD model",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -146,7 +146,7 @@ def get_model_info():
     return model_info
 
 def main():
-    st.title("📦 Smart Pack Prediction System")
+    st.title("📦 Smartspack KDD model")
     st.markdown("---")
     
     # Sidebar
@@ -159,130 +159,50 @@ def main():
     if option == "Make Predictions":
         st.header("🎯 Make Predictions")
         
-        # Option to choose input method
-        input_method = st.radio(
-            "Choose input method:",
-            ["Upload CSV File", "Manual Input Form"]
-        )
-        
-        if input_method == "Upload CSV File":
-            st.subheader("Upload CSV File")
-            uploaded_file = st.file_uploader(
-                "Choose a CSV file", 
-                type="csv",
-                help="Upload a CSV file with the following columns: Age Bracket, Gender, Temperature of food, Texture of food, Stacking"
-            )
+        # Manual Input Form only
+        with st.form("prediction_form"):
+            col1, col2 = st.columns(2)
             
-            if uploaded_file is not None:
-                try:
-                    # Read the uploaded file
-                    df = pd.read_csv(uploaded_file)
-                    
-                    st.subheader("Input Data Preview")
-                    st.dataframe(df)
-                    
-                    # Make predictions
-                    if st.button("Make Predictions", type="primary"):
-                        with st.spinner("Making predictions..."):
-                            results = make_predictions(df)
-                            
-                            if results is not None:
-                                st.success("Predictions completed!")
-                                
-                                st.subheader("Prediction Results")
-                                
-                                # Define automation parameters and UX metrics
-                                automation_params = ['Type of Sanitiser', 'No. of Vents', 'Vents Sizes', 'Flut Size']
-                                ux_params = ['Packaging Leaking', 'Package Satisfaction', 'Sanitiser Satisfaction']
-                                
-                                # Display summary for first row if available
-                                if len(results) > 0:
-                                    st.markdown("#### 🤖 Automation Parameters (First Row)")
-                                    col1, col2 = st.columns(2)
-                                    for i, param in enumerate(automation_params):
-                                        if i % 2 == 0:
-                                            with col1:
-                                                st.metric(label=param, value=results[param].iloc[0])
-                                        else:
-                                            with col2:
-                                                st.metric(label=param, value=results[param].iloc[0])
-                                    
-                                    st.markdown("#### 📱 UX Metrics (First Row)")
-                                    col3, col4, col5 = st.columns(3)
-                                    for i, param in enumerate(ux_params):
-                                        if i == 0:
-                                            with col3:
-                                                st.metric(label=param, value=results[param].iloc[0])
-                                        elif i == 1:
-                                            with col4:
-                                                st.metric(label=param, value=results[param].iloc[0])
-                                        else:
-                                            with col5:
-                                                st.metric(label=param, value=results[param].iloc[0])
-                                
-                                st.markdown("#### 📊 Complete Results Table")
-                                st.dataframe(results)
-                                
-                                # Download button
-                                csv = results.to_csv(index=False)
-                                st.download_button(
-                                    label="Download Results as CSV",
-                                    data=csv,
-                                    file_name='predictions_output.csv',
-                                    mime='text/csv'
-                                )
-                            else:
-                                st.error("Failed to make predictions. Please check your model file.")
+            with col1:
+                age_bracket = st.selectbox(
+                    "Age Bracket",
+                    ["18-25", "26-35", "36-45", "46-55", "56-65", "65+"]
+                )
                 
-                except Exception as e:
-                    st.error(f"Error reading file: {str(e)}")
-        
-        else:  # Manual Input Form
-            st.subheader("Manual Input Form")
+                gender = st.selectbox(
+                    "Gender",
+                    ["Male", "Female", "Other"]
+                )
+                
+                temp_food = st.selectbox(
+                    "Temperature of Food",
+                    ["Too Cold", "Just Right", "Too Hot"]
+                )
             
-            with st.form("prediction_form"):
-                col1, col2 = st.columns(2)
+            with col2:
+                texture_food = st.selectbox(
+                    "Texture of Food",
+                    ["Too Soft", "Just Right", "Too Hard", "Dry"]
+                )
                 
-                with col1:
-                    age_bracket = st.selectbox(
-                        "Age Bracket",
-                        ["18-25", "26-35", "36-45", "46-55", "56-65", "65+"]
-                    )
-                    
-                    gender = st.selectbox(
-                        "Gender",
-                        ["Male", "Female", "Other"]
-                    )
-                    
-                    temp_food = st.selectbox(
-                        "Temperature of Food",
-                        ["Too Cold", "Just Right", "Too Hot"]
-                    )
+                stacking = st.selectbox(
+                    "Stacking",
+                    ["Top", "Middle", "Bottom"]
+                )
+            
+            submitted = st.form_submit_button("Make Prediction", type="primary")
+            
+            if submitted:
+                # Create DataFrame from form input
+                input_data = pd.DataFrame({
+                    'Age Bracket': [age_bracket],
+                    'Gender': [gender],
+                    'Temperature of food': [temp_food],
+                    'Texture of food': [texture_food],
+                    'Stacking': [stacking]
+                })
                 
-                with col2:
-                    texture_food = st.selectbox(
-                        "Texture of Food",
-                        ["Too Soft", "Just Right", "Too Hard", "Dry"]
-                    )
-                    
-                    stacking = st.selectbox(
-                        "Stacking",
-                        ["Top", "Middle", "Bottom"]
-                    )
-                
-                submitted = st.form_submit_button("Make Prediction", type="primary")
-                
-                if submitted:
-                    # Create DataFrame from form input
-                    input_data = pd.DataFrame({
-                        'Age Bracket': [age_bracket],
-                        'Gender': [gender],
-                        'Temperature of food': [temp_food],
-                        'Texture of food': [texture_food],
-                        'Stacking': [stacking]
-                    })
-                    
-                    with st.spinner("Making prediction..."):
+                with st.spinner("Making prediction..."):
                         results = make_predictions(input_data)
                         
                         if results is not None:
@@ -294,8 +214,8 @@ def main():
                             automation_params = ['Type of Sanitiser', 'No. of Vents', 'Vents Sizes', 'Flut Size']
                             ux_params = ['Packaging Leaking', 'Package Satisfaction', 'Sanitiser Satisfaction']
                             
-                            # Display Automation Parameters
-                            st.markdown("#### 🤖 Automation Parameters")
+                            # Display Smart Machine Parameters
+                            st.markdown("#### ⚙️ Smart Machine Parameters")
                             col1, col2 = st.columns(2)
                             for i, param in enumerate(automation_params):
                                 if i % 2 == 0:
@@ -305,8 +225,11 @@ def main():
                                     with col2:
                                         st.metric(label=param, value=results[param].iloc[0])
                             
+                            # Add spacing between sections
+                            st.markdown("<br>", unsafe_allow_html=True)
+                            
                             # Display UX Metrics
-                            st.markdown("#### 📱 UX Metrics")
+                            st.markdown("#### 😊 UX Metrics")
                             col3, col4, col5 = st.columns(3)
                             for i, param in enumerate(ux_params):
                                 if i == 0:
@@ -332,7 +255,7 @@ def main():
                                 mime='text/csv'
                             )
                         else:
-                            st.error("Failed to make prediction. Please check your model file.")
+                            pass  # Removed error container as requested
     
     elif option == "Model Information":
         st.header("ℹ️ Model Information")
@@ -357,7 +280,7 @@ def main():
         st.header("📋 About")
         
         st.markdown("""
-        ## Smart Pack Prediction System
+        ## Smartspack KDD model
         
         This web application uses machine learning models to predict various aspects of smart packaging based on user inputs.
         
