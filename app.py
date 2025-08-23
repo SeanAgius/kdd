@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 @st.cache_data
-def load_models():
+def load_models(show_errors=False):
     """Load the pre-trained models from joblib file"""
     try:
         # Try joblib first (preferred)
@@ -29,13 +29,16 @@ def load_models():
                 saved_models = pickle.load(f)
             return saved_models
         except FileNotFoundError:
-            st.error("Error: Neither 'trained_models.joblib' nor 'trained_models.pkl' found. Please ensure a model file is in the same directory.")
+            if show_errors:
+                st.error("Error: Neither 'trained_models.joblib' nor 'trained_models.pkl' found. Please ensure a model file is in the same directory.")
             return None
     except ModuleNotFoundError as e:
-        st.error(f"Error: Missing required module - {str(e)}. Please check your environment setup.")
+        if show_errors:
+            st.error(f"Error: Missing required module - {str(e)}. Please check your environment setup.")
         return None
     except Exception as e:
-        st.error(f"Error loading models: {str(e)}. The model file may be corrupted or incompatible.")
+        if show_errors:
+            st.error(f"Error loading models: {str(e)}. The model file may be corrupted or incompatible.")
         return None
 
 def make_predictions(input_data):
@@ -254,6 +257,12 @@ def main():
                                 file_name='prediction_result.csv',
                                 mime='text/csv'
                             )
+                            
+                            # Debug information (hidden by default)
+                            with st.expander("🔧 Debug Information", expanded=False):
+                                st.write("Model predictions completed successfully")
+                                st.write(f"Data shape: {results.shape}")
+                                st.write(f"Prediction time: {pd.Timestamp.now()}")
                         else:
                             pass  # Removed error container as requested
     
@@ -274,7 +283,8 @@ def main():
                         for class_name in info['Classes']:
                             st.write(f"• {class_name}")
         else:
-            st.error("Could not load model information. Please check if 'trained_models.pkl' exists.")
+            with st.expander("🔧 Debug Information", expanded=False):
+                st.error("Could not load model information. Please check if 'trained_models.pkl' exists.")
     
     elif option == "About":
         st.header("📋 About")
@@ -285,7 +295,7 @@ def main():
         This web application uses machine learning models to predict various aspects of smart packaging based on user inputs.
         
         ### Features:
-        - **Multiple Input Methods**: Upload CSV files or use manual form input
+        - **Simple Manual Input**: Easy-to-use form interface
         - **Seven Prediction Categories**: 
           - Type of Sanitiser
           - Number of Vents
@@ -305,9 +315,10 @@ def main():
         
         ### How to Use:
         1. Choose "Make Predictions" from the sidebar
-        2. Either upload a CSV file or use the manual input form
-        3. Click "Make Predictions" to get results
-        4. Download the results as a CSV file
+        2. Fill out the manual input form with your preferences
+        3. Click "Make Prediction" to get results
+        4. View the Smart Machine Parameters and UX Metrics
+        5. Download the results as a CSV file if needed
         
         ### Model Information:
         View detailed information about each trained model including accuracy scores and available prediction classes.
