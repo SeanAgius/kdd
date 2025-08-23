@@ -2,9 +2,24 @@ import streamlit as st
 import pandas as pd
 import joblib
 import numpy as np
+import warnings
+import logging
 from io import StringIO
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
+
+# Suppress warnings by default
+warnings.filterwarnings("ignore")
+logging.getLogger().setLevel(logging.ERROR)
+
+# Suppress Streamlit deprecation warnings
+try:
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    st.set_option('deprecation.showfileUploaderEncoding', False)
+    st.set_option('client.showWarningOnDirectExecution', False)
+    st.set_option('client.showErrorDetails', False)
+except:
+    pass  # Some options might not exist in all Streamlit versions
 
 # Set page configuration
 st.set_page_config(
@@ -158,6 +173,16 @@ def main():
         "Choose an option:",
         ["Make Predictions", "Model Information", "About"]
     )
+    
+    # Debug settings in sidebar
+    with st.sidebar.expander("🔧 Debug Settings"):
+        show_warnings = st.checkbox("Show warnings", value=False)
+        if show_warnings:
+            warnings.filterwarnings("default")
+            logging.getLogger().setLevel(logging.WARNING)
+        else:
+            warnings.filterwarnings("ignore")
+            logging.getLogger().setLevel(logging.ERROR)
     
     if option == "Make Predictions":
         st.header("🎯 Make Predictions")
