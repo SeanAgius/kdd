@@ -1,0 +1,193 @@
+Age Bracket,Gender,Temperature of food,Texture of food,Stacking,Type of Sanitiser,No. of Vents,Vents Sizes,Flut Size,Packaging Leaking,Package Satisfaction,Sanitiser Satisfaction
+65+,Female,Just Right,Dry,Bottom,Gel 3ml,2,Small,C,Yes,Not Satisfied,Satisfied
+18-24,Female,Just Right,Dry,Bottom,Liquid 2ml,2,Small,C,No,Neutral,Satisfied
+65+,Male,Just Right,Dry,Bottom,Gel 3ml,2,Small,C,Yes,Neutral,Satisfied
+35-44,Female,Cold,Just Right,Bottom,Gel 3ml,2,Small,C,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Small,C,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,2,Small,C,No,Satisfied,Satisfied
+18-24,Male,Cold,Just Right,Bottom,Liquid 2.5ml,2,Small,C,No,Neutral,Satisfied
+55-64,Female,Cold,Dry,Bottom,Gel 3ml,2,Small,C,Yes,Not Satisfied,Satisfied
+25-34,Male,Too Cold,Dry,Bottom,Liquid 2ml,2,Small,C,No,Not Satisfied,Satisfied
+25-34,Female,Just Right,Dry,Bottom,Liquid 2ml,2,Small,C,No,Satisfied,Very Satisfied
+45-54,Female,Just Right,Dry,Bottom,Gel 3ml,2,Small,C,No,Neutral,Very Satisfied
+45-54,Male,Cold,Just Right,Bottom,Liquid 2ml,2,Small,C,No,Neutral,Satisfied
+65+,Female,Cold,Dry,Top,Gel 3ml,2,Small,C,No,Neutral,Satisfied
+18-24,Female,Cold,Soggy,Top,Liquid 2ml,2,Small,C,No,Not Satisfied,Satisfied
+65+,Male,Just Right,Dry,Top,Gel 3ml,2,Small,C,Yes,Neutral,Satisfied
+35-44,Female,Cold,Just Right,Top,Gel 3ml,2,Small,C,No,Satisfied,Satisfied
+35-44,Male,Cold,Just Right,Top,Liquid 2ml,2,Small,C,No,Satisfied,Satisfied
+55-64,Male,Cold,Just Right,Top,Gel 3ml,2,Small,C,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,2,Small,C,No,Satisfied,Satisfied
+55-64,Female,Cold,Just Right,Top,Gel 3ml,2,Small,C,Yes,Satisfied,Satisfied
+25-34,Male,Cold,Soggy,Top,Liquid 2ml,2,Small,C,No,Neutral,Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,2,Small,C,Yes,Not Satisfied,Neutral
+45-54,Female,Just Right,Dry,Top,Gel 3ml,2,Small,C,No,Neutral,Satisfied
+45-54,Male,Cold,Just Right,Top,Liquid 2ml,2,Small,C,Yes,Not Satisfied,Very Satisfied
+65+,Female,Cold,Just Right,Bottom,Gel 3ml,2,Small,E,No,Satisfied,Satisfied
+18-24,Female,Cold,Soggy,Bottom,Liquid 2ml,2,Small,E,No,Neutral,Satisfied
+65+,Male,Hot,Just Right,Bottom,Gel 3ml,2,Small,E,No,Neutral,Satisfied
+35-44,Female,Cold,Just Right,Bottom,Gel 3ml,2,Small,E,No,Satisfied,Neutral
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Small,E,No,Satisfied,Satisfied
+55-64,Male,Cold,Just Right,Bottom,Gel 3ml,2,Small,E,No,Satisfied,Satisfied
+18-24,Male,Cold,Just Right,Bottom,Liquid 2.5ml,2,Small,E,No,Neutral,Satisfied
+55-64,Female,Cold,Just Right,Bottom,Gel 3ml,2,Small,E,Yes,Satisfied,Satisfied
+25-34,Male,Cold,Dry,Bottom,Liquid 2ml,2,Small,E,No,Neutral,Satisfied
+25-34,Female,Just Right,Soggy,Bottom,Liquid 2ml,2,Small,E,No,Neutral,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,2,Small,E,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Small,E,No,Satisfied,Satisfied
+65+,Female,Cold,Soggy,Top,Gel 3ml,2,Small,E,Yes,Not Satisfied At All,Very Satisfied
+18-24,Female,Cold,Soggy,Top,Liquid 2ml,2,Small,E,Yes,Not Satisfied,Neutral
+65+,Male,Hot,Just Right,Top,Gel 3ml,2,Small,E,Yes,Satisfied,Very Satisfied
+35-44,Female,Too Cold,Just Right,Top,Gel 3ml,2,Small,E,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Top,Liquid 2ml,2,Small,E,No,Very Satisfied,Satisfied
+55-64,Male,Cold,Just Right,Top,Gel 3ml,2,Small,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,2,Small,E,No,Satisfied,Satisfied
+55-64,Female,Cold,,Top,Gel 3ml,2,Small,E,Yes,Satisfied,Satisfied
+25-34,Male,Cold,Soggy,Top,Liquid 2ml,2,Small,E,No,Neutral,Neutral
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,2,Small,E,Yes,Neutral,Satisfied
+45-54,Female,Just Right,Dry,Top,Gel 3ml,2,Small,E,No,Neutral,Satisfied
+45-54,Male,Cold,Just Right,Top,Liquid 2ml,2,Small,E,Yes,Not Satisfied,Satisfied
+65+,Female,Cold,Dry,Bottom,Gel 3ml,2,Big,C,No,Not Satisfied,Satisfied
+18-24,Female,Just Right,Dry,Bottom,Liquid 2ml,2,Big,C,No,Neutral,Satisfied
+65+,Male,Just Right,Dry,Bottom,Gel 3ml,2,Big,C,Yes,Satisfied,Satisfied
+35-44,Female,Just Right,Just Right,Bottom,Gel 3ml,2,Big,C,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,C,No,Very Satisfied,Neutral
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,2,Big,C,No,Very Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,2,Big,C,No,Very Satisfied,Satisfied
+55-64,Female,Cold,Soggy,Bottom,Gel 3ml,2,Big,C,Yes,Neutral,Satisfied
+25-34,Male,Just Right,,Bottom,Liquid 2ml,2,Big,C,No,Satisfied,Satisfied
+25-34,Female,Just Right,Soggy,Bottom,Liquid 2ml,2,Big,C,Yes,Neutral,Satisfied
+45-54,Female,Too Hot,Just Right,Bottom,Gel 3ml,2,Big,C,No,Very Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,C,No,Satisfied,Neutral
+65+,Female,Cold,Soggy,Top,Gel 3ml,2,Big,C,No,Neutral,Satisfied
+18-24,Female,Cold,Soggy,Top,Liquid 2ml,2,Big,C,No,Not Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Top,Gel 3ml,2,Big,C,Yes,Satisfied,Satisfied
+35-44,Female,Cold,Just Right,Top,Gel 3ml,2,Big,C,No,Satisfied,Satisfied
+35-44,Male,Cold,Just Right,Top,Liquid 2ml,2,Big,C,No,Satisfied,Neutral
+55-64,Male,Cold,Just Right,Top,Gel 3ml,2,Big,C,No,Very Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,2,Big,C,No,Neutral,Satisfied
+55-64,Female,Cold,,Top,Gel 3ml,2,Big,C,Yes,Neutral,Satisfied
+25-34,Male,,,Top,Liquid 2ml,2,Big,C,No,Satisfied,Satisfied
+25-34,Female,Just Right,Soggy,Top,Liquid 2ml,2,Big,C,No,Satisfied,Very Satisfied
+45-54,Female,Hot,Just Right,Top,Gel 3ml,2,Big,C,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,2,Big,C,No,Satisfied,Satisfied
+65+,Female,Hot,Just Right,Bottom,Gel 3ml,2,Big,E,Yes,Neutral,Satisfied
+18-24,Female,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,E,No,Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Bottom,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+35-44,Female,Cold,Just Right,Bottom,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,E,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,2,Big,E,No,Very Satisfied,Satisfied
+55-64,Female,,Just Right,Bottom,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+25-34,Male,Just Right,,Bottom,Liquid 2ml,2,Big,E,,Neutral,Very Satisfied
+25-34,Female,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,E,No,Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,2,Big,E,No,Satisfied,Very Satisfied
+65+,Female,Just Right,Just Right,Top,Gel 3ml,2,Big,E,Yes,Satisfied,Satisfied
+18-24,Female,Just Right,Just Right,Top,Liquid 2ml,2,Big,E,Yes,Satisfied,Neutral
+65+,Male,Just Right,Just Right,Top,Gel 3ml,2,Big,E,Yes,Satisfied,Satisfied
+35-44,Female,Cold,Just Right,Top,Gel 3ml,2,Big,E,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Top,Liquid 2ml,2,Big,E,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Top,Gel 3ml,2,Big,E,No,Very Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,2,Big,E,No,Satisfied,Satisfied
+55-64,Female,Cold,Soggy,Top,Gel 3ml,2,Big,E,No,Neutral,Satisfied
+25-34,Male,Just Right,,Top,Liquid 2ml,2,Big,E,Yes,Neutral,Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,2,Big,E,No,Very Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Top,Gel 3ml,2,Big,E,No,Satisfied,Neutral
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,2,Big,E,No,Satisfied,Satisfied
+65+,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Small,C,Yes,Satisfied,Satisfied
+18-24,Female,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,C,No,Very Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Small,C,Yes,Neutral,Satisfied
+35-44,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Small,C,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,C,Yes,Neutral,Satisfied
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Small,C,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,4,Small,C,Yes,Neutral,Satisfied
+55-64,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Small,C,Yes,Satisfied,Satisfied
+25-34,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,C,Yes,Neutral,Satisfied
+25-34,Female,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,C,Yes,Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,4,Small,C,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,C,Yes,Not Satisfied,Satisfied
+65+,Female,Just Right,Just Right,Top,Gel 3ml,4,Small,C,Yes,Very Satisfied,Satisfied
+18-24,Female,Just Right,Just Right,Top,Liquid 2ml,4,Small,C,Yes,Neutral,Satisfied
+65+,Male,Just Right,Just Right,Top,Gel 3ml,4,Small,C,Yes,Neutral,Satisfied
+35-44,Female,Just Right,Just Right,Top,Gel 3ml,4,Small,C,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,C,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Top,Gel 3ml,4,Small,C,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,4,Small,C,Yes,Neutral,Satisfied
+55-64,Female,Just Right,Just Right,Top,Gel 3ml,4,Small,C,Yes,Satisfied,Satisfied
+25-34,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,C,Yes,Neutral,Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,4,Small,C,Yes,Neutral,Satisfied
+45-54,Female,Hot,Dry,Top,Gel 3ml,4,Small,C,Yes,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,C,Yes,Not Satisfied,Satisfied
+65+,Female,Just Right,Dry,Bottom,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+18-24,Female,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,E,Yes,Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Small,E,Yes,Not Satisfied,Satisfied
+35-44,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,E,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,4,Small,E,No,Satisfied,Satisfied
+55-64,Female,Cold,Dry,Bottom,Gel 3ml,4,Small,E,No,Neutral,Satisfied
+25-34,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,E,No,Very Satisfied,Satisfied
+25-34,Female,Just Right,Soggy,Bottom,Liquid 2ml,4,Small,E,No,Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Small,E,No,Satisfied,Satisfied
+65+,Female,Just Right,Dry,Top,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+18-24,Female,Just Right,Just Right,Top,Liquid 2ml,4,Small,E,No,Very Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Top,Gel 3ml,4,Small,E,Yes,Not Satisfied,Satisfied
+35-44,Female,Cold,Just Right,Top,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+35-44,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,E,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Top,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,4,Small,E,No,Satisfied,Satisfied
+55-64,Female,Cold,Soggy,Top,Gel 3ml,4,Small,E,No,Neutral,Satisfied
+25-34,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,E,No,Very Satisfied,Very Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,4,Small,E,No,Very Satisfied,Satisfied
+45-54,Female,Just Right,Just Right,Top,Gel 3ml,4,Small,E,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,4,Small,E,No,Satisfied,Satisfied
+65+,Female,Just Right,Soggy,Bottom,Gel 3ml,4,Big,C,Yes,Not Satisfied,Satisfied
+18-24,Female,Just Right,Soggy,Bottom,Liquid 2ml,4,Big,C,Yes,Neutral,Very Satisfied
+65+,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Big,C,No,Satisfied,Satisfied
+35-44,Female,Cold,Just Right,Bottom,Gel 3ml,4,Big,C,No,Satisfied,Satisfied
+35-44,Male,Cold,Just Right,Bottom,Liquid 2ml,4,Big,C,No,Satisfied,Satisfied
+55-64,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Big,C,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,4,Big,C,No,Satisfied,Satisfied
+55-64,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Big,C,No,Satisfied,Satisfied
+25-34,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Big,C,No,Satisfied,Satisfied
+25-34,Female,Just Right,Just Right,Bottom,Liquid 2ml,4,Big,C,No,Very Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,4,Big,C,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Big,C,Yes,Neutral,Satisfied
+65+,Female,Just Right,Soggy,Top,Gel 3ml,4,Big,C,,Satisfied,Satisfied
+18-24,Female,Just Right,Soggy,Top,Liquid 2ml,4,Big,C,No,Not Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Top,Gel 3ml,4,Big,C,Yes,Neutral,Satisfied
+35-44,Female,Cold,Just Right,Top,Gel 3ml,4,Big,C,No,Satisfied,Very Satisfied
+35-44,Male,Cold,Just Right,Top,Liquid 2ml,4,Big,C,No,Satisfied,Neutral
+55-64,Male,Just Right,Just Right,Top,Gel 3ml,4,Big,C,No,Satisfied,Very Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,4,Big,C,No,Satisfied,Satisfied
+55-64,Female,Just Right,Dry,Top,Gel 3ml,4,Big,C,No,Not Satisfied,Satisfied
+25-34,Male,Just Right,Just Right,Top,Liquid 2ml,4,Big,C,No,Very Satisfied,Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,4,Big,C,No,Very Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Top,Gel 3ml,4,Big,C,No,Satisfied,Very Satisfied
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,4,Big,C,No,Satisfied,Satisfied
+65+,Female,Just Right,Just Right,Bottom,Gel 3ml,4,Big,E,Yes,Neutral,Satisfied
+18-24,Female,Just Right,Just Right,Bottom,Liquid 2ml,4,Big,E,Yes,Satisfied,Neutral
+65+,Male,Just Right,Just Right,Bottom,Gel 3ml,4,Big,E,No,Neutral,Satisfied
+35-44,Female,Cold,Just Right,Bottom,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+35-44,Male,Cold,Just Right,Bottom,Liquid 2ml,4,Big,E,No,Satisfied,Very Satisfied
+55-64,Male,Cold,Just Right,Bottom,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Bottom,Liquid 2.5ml,4,Big,E,No,Satisfied,Satisfied
+55-64,Female,Cold,Soggy,Bottom,Gel 3ml,4,Big,E,Yes,Neutral,Neutral
+25-34,Male,Just Right,,Bottom,Liquid 2ml,4,Big,E,No,Satisfied,Satisfied
+25-34,Female,Just Right,Soggy,Bottom,Liquid 2ml,4,Big,E,No,Not Satisfied,Satisfied
+45-54,Female,Hot,Just Right,Bottom,Gel 3ml,4,Big,E,Yes,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Bottom,Liquid 2ml,4,Big,E,No,Neutral,Satisfied
+65+,Female,Just Right,Soggy,Top,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+18-24,Female,Cold,Soggy,Top,Liquid 2ml,4,Big,E,Yes,Not Satisfied,Satisfied
+65+,Male,Just Right,Just Right,Top,Gel 3ml,4,Big,E,Yes,Neutral,Neutral
+35-44,Female,Cold,Just Right,Top,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+35-44,Male,Cold,Just Right,Top,Liquid 2ml,4,Big,E,No,Satisfied,Satisfied
+55-64,Male,Cold,Just Right,Top,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+18-24,Male,Just Right,Just Right,Top,Liquid 2.5ml,4,Big,E,Yes,Neutral,Satisfied
+55-64,Female,Just Right,Just Right,Top,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+25-34,Male,Just Right,,Top,Liquid 2ml,4,Big,E,No,Satisfied,Satisfied
+25-34,Female,Just Right,Just Right,Top,Liquid 2ml,4,Big,E,No,Satisfied,Satisfied
+45-54,Female,Just Right,Dry,Top,Gel 3ml,4,Big,E,No,Satisfied,Satisfied
+45-54,Male,Just Right,Just Right,Top,Liquid 2ml,4,Big,E,No,Satisfied,Satisfied

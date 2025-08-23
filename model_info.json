@@ -1,0 +1,30 @@
+{
+  "Type of Sanitiser": {
+    "model_type": "GradientBoosting",
+    "accuracy": 1.0
+  },
+  "No. of Vents": {
+    "model_type": "RandomForest",
+    "accuracy": 0.5897435897435898
+  },
+  "Vents Sizes": {
+    "model_type": "RandomForest",
+    "accuracy": 0.6153846153846154
+  },
+  "Flut Size": {
+    "model_type": "SVC",
+    "accuracy": 0.5128205128205128
+  },
+  "Packaging Leaking": {
+    "model_type": "GradientBoosting",
+    "accuracy": 0.7692307692307693
+  },
+  "Package Satisfaction": {
+    "model_type": "LogisticRegression",
+    "accuracy": 0.717948717948718
+  },
+  "Sanitiser Satisfaction": {
+    "model_type": "RandomForest",
+    "accuracy": 0.8717948717948718
+  }
+}
