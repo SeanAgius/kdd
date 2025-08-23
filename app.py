@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import joblib
 import numpy as np
 from io import StringIO
 from sklearn.preprocessing import OneHotEncoder
@@ -16,14 +16,21 @@ st.set_page_config(
 
 @st.cache_data
 def load_models():
-    """Load the pre-trained models from pickle file"""
+    """Load the pre-trained models from joblib file"""
     try:
-        with open('trained_models.pkl', 'rb') as f:
-            saved_models = pickle.load(f)
+        # Try joblib first (preferred)
+        saved_models = joblib.load('trained_models.joblib')
         return saved_models
     except FileNotFoundError:
-        st.error("Error: 'trained_models.pkl' not found. Please ensure the model file is in the same directory.")
-        return None
+        # Fallback to pickle if joblib not found
+        try:
+            import pickle
+            with open('trained_models.pkl', 'rb') as f:
+                saved_models = pickle.load(f)
+            return saved_models
+        except FileNotFoundError:
+            st.error("Error: Neither 'trained_models.joblib' nor 'trained_models.pkl' found. Please ensure a model file is in the same directory.")
+            return None
     except ModuleNotFoundError as e:
         st.error(f"Error: Missing required module - {str(e)}. Please check your environment setup.")
         return None
