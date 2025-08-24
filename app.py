@@ -184,25 +184,12 @@ def main():
     st.title("📦 SMARTSPACK KDD Model")
     st.markdown("---")
     
-    # Navigation (no sidebar dropdown)
-    st.markdown("### Navigation")
-    col1, col2, col3 = st.columns(3)
-    
-    with col1:
-        if st.button("Make Predictions", use_container_width=True):
-            st.session_state.page = "Make Predictions"
-    with col2:
-        if st.button("Model Information", use_container_width=True):
-            st.session_state.page = "Model Information"
-    with col3:
-        if st.button("About", use_container_width=True):
-            st.session_state.page = "About"
-    
-    # Initialize page state if not exists
-    if 'page' not in st.session_state:
-        st.session_state.page = "Make Predictions"
-    
-    option = st.session_state.page
+    # Sidebar Navigation
+    st.sidebar.title("Navigation")
+    option = st.sidebar.radio(
+        "Choose a page:",
+        ["Make Predictions", "Model Information", "About"]
+    )
     
     if option == "Make Predictions":
         st.header("🎯 Make Predictions")
