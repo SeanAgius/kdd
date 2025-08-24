@@ -40,7 +40,7 @@ if 'streamlit' in sys.modules:
 
 # Set page configuration
 st.set_page_config(
-    page_title="Smartspack KDD model",
+    page_title="SMARTSPACK KDD Model",
     page_icon="📦",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -118,10 +118,10 @@ def make_predictions(input_data):
         from sklearn.preprocessing import LabelEncoder
         feature_categories = {
             'Age Bracket': ['18-25', '26-35', '36-45', '46-55', '56-65', '65+'],
-            'Gender': ['Male', 'Female', 'Other'],
-            'Temperature of food': ['Too Cold', 'Just Right', 'Too Hot'],
-            'Texture of food': ['Too Soft', 'Just Right', 'Too Hard', 'Dry'],
-            'Stacking': ['Top', 'Middle', 'Bottom']
+            'Gender': ['Male', 'Female'],
+            'Temperature of food': ['Too Hot', 'Hot', 'Just Right', 'Cold', 'Too Cold'],
+            'Texture of food': ['Soggy', 'Just Right', 'Dry'],
+            'Stacking': ['Top', 'Bottom']
         }
         
         for i, col in enumerate(X_input.columns):
@@ -181,15 +181,28 @@ def get_model_info():
     return model_info
 
 def main():
-    st.title("📦 Smartspack KDD model")
+    st.title("📦 SMARTSPACK KDD Model")
     st.markdown("---")
     
-    # Sidebar
-    st.sidebar.title("Navigation")
-    option = st.sidebar.selectbox(
-        "Choose an option:",
-        ["Make Predictions", "Model Information", "About"]
-    )
+    # Navigation (no sidebar dropdown)
+    st.markdown("### Navigation")
+    col1, col2, col3 = st.columns(3)
+    
+    with col1:
+        if st.button("Make Predictions", use_container_width=True):
+            st.session_state.page = "Make Predictions"
+    with col2:
+        if st.button("Model Information", use_container_width=True):
+            st.session_state.page = "Model Information"
+    with col3:
+        if st.button("About", use_container_width=True):
+            st.session_state.page = "About"
+    
+    # Initialize page state if not exists
+    if 'page' not in st.session_state:
+        st.session_state.page = "Make Predictions"
+    
+    option = st.session_state.page
     
     if option == "Make Predictions":
         st.header("🎯 Make Predictions")
@@ -206,23 +219,23 @@ def main():
                 
                 gender = st.selectbox(
                     "Gender",
-                    ["Male", "Female", "Other"]
+                    ["Male", "Female"]
                 )
                 
                 temp_food = st.selectbox(
                     "Temperature of Food",
-                    ["Too Cold", "Just Right", "Too Hot"]
+                    ["Too Hot", "Hot", "Just Right", "Cold", "Too Cold"]
                 )
             
             with col2:
                 texture_food = st.selectbox(
                     "Texture of Food",
-                    ["Too Soft", "Just Right", "Too Hard", "Dry"]
+                    ["Soggy", "Just Right", "Dry"]
                 )
                 
                 stacking = st.selectbox(
                     "Stacking",
-                    ["Top", "Middle", "Bottom"]
+                    ["Top", "Bottom"]
                 )
             
             submitted = st.form_submit_button("Make Prediction", type="primary")
@@ -327,7 +340,7 @@ def main():
         st.header("📋 About")
         
         st.markdown("""
-        ## Smartspack KDD model
+        ## SMARTSPACK KDD Model
         
         This web application uses machine learning models to predict various aspects of smart packaging based on user inputs.
         
@@ -345,13 +358,13 @@ def main():
         ### Input Requirements:
         The system requires the following input features:
         1. **Age Bracket**: Age range of the user
-        2. **Gender**: User's gender
-        3. **Temperature of Food**: Food temperature preference
-        4. **Texture of Food**: Food texture preference
-        5. **Stacking**: Packaging stacking preference
+        2. **Gender**: Male or Female
+        3. **Temperature of Food**: Too Hot, Hot, Just Right, Cold, or Too Cold
+        4. **Texture of Food**: Soggy, Just Right, or Dry
+        5. **Stacking**: Top or Bottom
         
         ### How to Use:
-        1. Choose "Make Predictions" from the sidebar
+        1. Click "Make Predictions" from the navigation buttons
         2. Fill out the manual input form with your preferences
         3. Click "Make Prediction" to get results
         4. View the Smart Machine Parameters and UX Metrics
